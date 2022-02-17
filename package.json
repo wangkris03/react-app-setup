@@ -1,0 +1,50 @@
+{
+  "name": "react-app-setup",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@types/react-router-dom": "^5.3.3",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "@vitejs/plugin-legacy": "^1.7.1",
+    "@vitejs/plugin-react": "^1.0.7",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.9.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.28.0",
+    "husky": "^7.0.0",
+    "lint-staged": "^12.3.4",
+    "postcss": "^8.4.6",
+    "tailwindcss": "^3.0.22",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "tabWidth": 2,
+    "semi": true,
+    "printWidth": 120,
+    "singleQuote": false,
+    "jsxBracketSameLine": true,
+    "useTabs": false
+  },
+  "lint-staged": {
+    "pages/**/*": "prettier --write --ignore-unknown",
+    "scripts/**/*": "prettier --write --ignore-unknown",
+    "pages/**/*.{tsx,ts}": "eslint --cache --fix",
+    "scripts/**/*.{tsx,ts}": "eslint --cache --fix"
+  }
+}
