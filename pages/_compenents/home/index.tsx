@@ -9,7 +9,6 @@ function Home({ children, ...rest }: Props): JSX.Element {
   const [count, setCount] = useState(0);
   const h = useHistory();
   console.log(rest);
-
   return (
     <div>
       <Header className="bg-red-400 text-white">this is red header</Header>

@@ -1,3 +1,4 @@
 *.js
 vite.config.ts
 cypress
+coverage
