@@ -8,6 +8,7 @@
 - 支持 tailwind-jit
 - eslint + prettier + husky
 - jest + esbuild
+- CSSTransition + react-motion
 
 ## 目录结构
 
@@ -35,6 +36,8 @@ pages
 - React-Router : https://v5.reactrouter.com/web/example/basic
 - Vite : https://vitejs.dev/guide/
 - tailwindcss : https://www.tailwindcss.cn/docs/utility-first
+- react-motion : https://github.com/chenglou/react-motion
+- CSSTransition : http://reactcommunity.org/react-transition-group/
 - jest
 
 ### 遇到的问题
