@@ -2,12 +2,16 @@ import { DOMAttributes } from "react";
 import { Header } from "../header";
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
+import { Animate } from "../animate";
+import { MotionDemo } from "../motion";
+
 interface Props extends DOMAttributes<HTMLDivElement> {
   className?: string;
 }
 function Home({ children, ...rest }: Props): JSX.Element {
   const [count, setCount] = useState(0);
   const h = useHistory();
+
   console.log(rest);
   return (
     <div>
@@ -29,6 +33,8 @@ function Home({ children, ...rest }: Props): JSX.Element {
           goto sub page
         </div>
       </div>
+      <Animate></Animate>
+      <MotionDemo></MotionDemo>
       {children}
     </div>
   );
